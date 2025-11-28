@@ -83,7 +83,50 @@ Through qualitative analysis, the best models from both approaches successfully 
 
 ---
 
-## 🔗 Project Files and Demo
+
+## 💻 Models
+
+This project utilized various models, ranging from the baseline IndicTrans2 to several fine-tuned variants.
+
+### Machine Translation Model Choices
+
+| Model Name | Hugging Face Model ID |
+| :--- | :--- |
+| **Original IndicTrans2 (en-indic 200M)** | `ai4bharat/indictrans2-en-indic-dist-200M` |
+| **Finetuned (Punctuation)** | `thenlpresearcher/iitb-en-indic-only-punct` |
+| **Finetuned (No Punctuation)** | `thenlpresearcher/iitb-en-indic-without-punct` |
+| **Combined Finetuned (1x Punct)** | `thenlpresearcher/shalaka_fd_indictrans2-en-indic-dist-200M_finetuned_eng_Latn_to_mar_Deva` |
+| **Combined Finetuned (2x Punct)** | `thenlpresearcher/shalaka_indictrans2-en-indic-dist-200M_finetuned_eng_Latn_to_mar_Deva` |
+| **t5-augmented Original IndicTrans2 (en-indic 200M)** | `ai4bharat/indictrans2-en-indic-dist-200M` |
+
+### T5 Punctuation Restoration Model (Example Usage)
+
+The fine-tuned T5 model used for Punctuation Restoration in **Approach 1** can be accessed via the Hugging Face pipeline:
+
+```python
+from transformers import pipeline
+
+# Initialize the pipeline for text-to-text generation
+punctuator_pipeline = pipeline("text2text-generation", model="thenlpresearcher/iitb-t5-finetuned-punctuation")
+
+text = "the morning sky stretched over the city like a quiet sheet of pale blue while people hurried through the streets"
+
+# Run the text through the pipeline
+output = punctuator_pipeline(text, max_length=128)
+
+# Sample Output: [{'generated_text': 'the morning sky stretched over the city like a quiet sheet of pale blue while people hurried through the streets.'}]
+
+```
+
+---
+
+
+
+
+
+
+
+## 🔗 Project Files
 
 * **Project Presentation (PPT):** [CS 772 – FINAL PROJECT EVALUATION](https://docs.google.com/presentation/d/1Wn99JgCa23sDjOis7VcCl_dJdGSxpebdkykqVnT05xQ/edit?usp=sharing)
 
