@@ -118,11 +118,29 @@ output = punctuator_pipeline(text, max_length=128)
 
 ```
 
+## 🛠️ Environment Setup and Dependencies
+
+To ensure a smooth and reproducible environment for running the project code, two separate environments are recommended based on the required dependencies.
+
+### General Project Setup
+
+For running the core Machine Translation models and general project scripts, please utilize the following dependency file:
+
+| Purpose | Requirement File | Installation Command |
+| :--- | :--- | :--- |
+| **General Dependencies** | `requirements.txt` | `pip install -r requirements.txt` |
+
+### BLEURT Evaluation Environment
+
+To perform evaluation using the **BLEURT** metric, a separate, specific environment is required to manage its dependencies effectively:
+
+| Purpose | Requirement File | Installation Command |
+| :--- | :--- | :--- |
+| **BLEURT Metric Dependencies** | `bleurt_env_requirements.txt` | `pip install -r bleurt_env_requirements.txt` |
+
+It is highly recommended to use **virtual environments** (e.g., `venv` or `conda`) to isolate these dependencies and prevent conflicts with other system packages.
+
 ---
-
-
-
-
 
 
 
