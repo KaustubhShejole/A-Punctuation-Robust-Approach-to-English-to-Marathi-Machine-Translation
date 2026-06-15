@@ -157,11 +157,3 @@ We have identified several promising avenues for future research:
 4.  **Error and Bias Handling:** Addressing identified issues, such as gender-bias in certain fine-tuned models, and improving the models' ability to correct intentionally wrong input punctuations.
 
 ---
-
-## 🙏 Acknowledgments
-
-We would like to express our gratitude to the following individuals and groups:
-
-* **Sourabh Deoghare:** For his constant guidance and support throughout the project.
-* **Course Instructors:** For offering CS 772, which provided the foundational knowledge necessary for this research.
-* **Evaluators of the Course Project:** Your suggestions and feedback are invaluable and will help us refine our work.
