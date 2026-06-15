@@ -1,9 +1,7 @@
 # Paper: [Assessing and Improving Punctuation Robustness in English-Marathi Machine Translation](https://aclanthology.org/2026.loresmt-1.13/)
 ## Authors: Kaustubh Shivshankar Shejole, Sourabh Deoghare, Pushpak Bhattacharyya
 
-
-# A Punctuation-Robust Approach to English-to-Marathi Machine Translation
-This repository contains the code, trained models, and supporting resources for assessing **punctuation robustness in English–Marathi machine translation (MT)**. The project investigates how variations and inconsistencies in punctuation impact translation quality, with a particular focus on realistic and low-resource evaluation settings.
+This repository contains the code, trained models, and supporting resources for the work[Assessing and Improving Punctuation Robustness in English-Marathi Machine Translation](https://aclanthology.org/2026.loresmt-1.13/). The project investigates how variations and inconsistencies in punctuation impact translation quality, with a particular focus on realistic and low-resource evaluation settings.
 The project addresses a critical issue in Machine Translation (MT): building systems that are robust to punctuation errors or omissions in the source English text, specifically for translation into the Marathi language.
 
 
